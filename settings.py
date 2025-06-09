@@ -12,12 +12,12 @@ STYLE_LAYERS = {'block1_conv1': 0.2, 'block2_conv1': 0.2, 'block3_conv1': 0.2, '
                 'block5_conv1': 0.2}
 # 内容图片路径
 # 生成图片的保存目录
-CONTENT_IMAGE_PATH = './images/touxiang.jpg'
-OUTPUT_DIR = './output1'
+# CONTENT_IMAGE_PATH = './images/touxiang.jpg'
+# OUTPUT_DIR = './output1'
 # CONTENT_IMAGE_PATH = './images/school1.jpg'
 # OUTPUT_DIR = './output2'
-# CONTENT_IMAGE_PATH = './images/school2.jpg'
-# OUTPUT_DIR = './output3'
+CONTENT_IMAGE_PATH = './images/school2.jpg'
+OUTPUT_DIR = './output3'
 # 风格图片路径
 STYLE_IMAGE_PATH = './images/style.jpg'
 
