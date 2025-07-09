@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>ImageStyleTransfer 图像风格转换</title>
+  <!-- 这里可引入CSS和字体等 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 顶部栏 -->
+  <header class="header">
+    <div class="logo">🎨 ImageStyleTransfer</div>
+    <div class="header-actions">
+      <button id="history-btn" title="历史记录">🕑</button>
+      <button id="theme-toggle" title="切换主题">🌙</button>
+    </div>
+  </header>
+
+  <!-- 主体内容 -->
+  <main class="main-content">
+    <!-- 步骤条 -->
+    <!-- <nav class="step-bar">
+      <span class="step active">1. 上传图片</span>
+      <span class="step">2. 选择风格</span>
+      <span class="step">3. 预览与下载</span>
+    </nav> -->
+
+    <!-- 上传图片区 -->
+    <section class="upload-section">
+      <label for="image-upload" class="upload-label">
+        <input type="file" id="image-upload" accept="image/*" hidden>
+        <span class="upload-btn">点击或拖拽上传图片</span>
+      </label>
+      <div class="image-preview" id="image-preview">
+        <!-- 上传后显示图片缩略图 -->
+      </div>
+    </section>
+
+    <!-- 风格选择区 -->
+    <section class="style-section">
+      <h2>选择风格</h2>
+      <div class="style-list" id="style-list">
+        <!-- 示例风格卡片 -->
+        <div class="style-card selected">
+          <img src="/images/star.jpg" alt="">
+          <span>梵高风</span>
+        </div>
+        <div class="style-card">
+          <img src="/images/nahan.jpg" alt="">
+          <span>呐喊风</span>
+        </div>
+        <div class="style-card">
+          <img src="/images/lisa.jpg" alt="">
+          <span>蒙娜丽莎风</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 转换按钮 -->
+    <section class="convert-section">
+      <button id="convert-btn" class="convert-btn">开始转换</button>
+      <div class="loading" id="loading" style="display:none;">转换中...</div>
+    </section>
+
+    <!-- 预览与下载区 -->
+    <section class="result-section" id="result-section" style="display:none;">
+      <h2>转换结果</h2>
+      <div class="result-image" id="result-image">
+        <!-- 转换后图片预览 -->
+      </div>
+      <div class="result-actions">
+        <button id="download-btn">一键下载</button>
+        <button id="compare-btn">对比原图</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- 历史记录弹窗 -->
+  <div class="history-modal" id="history-modal" style="display:none;">
+    <div class="history-content">
+      <h2>转换历史</h2>
+      <div class="history-list" id="history-list">
+        <!-- 每条历史：缩略图、风格、时间、操作 -->
+      </div>
+      <button id="close-history">关闭</button>
+    </div>
+  </div>
+
+  <!-- 底部栏 -->
+  <footer class="footer">
+    © 2025 ImageStyleTransfer | 保护您的隐私，所有处理均在本地完成
+  </footer>
+  <script src="main.js"></script>
+ </body>
+</html>
+
